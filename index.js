@@ -11,12 +11,31 @@ const jadwal = {
     "09:00": "IPA"
   },
   selasa: {
+    "07:00": "IPS"
+    "08:00": "Bahasa Inggris"
+    "09:00": "PKN"
+  },
+}rabu : {
+    "07:30": "PPkn"
+    "08:50": "Matematika"
+    "10.40": "Seni Budaya"
+ " 12.00"    : "Sejarah"
     "07:00": "IPS",
     "08:00": "Bahasa Inggris",
     "09:00": "PKN"
-  }
-};
+    
+  }kamis: {
+    "07.30": "kka"
+    "08:50kamis: {
+    "07.30": "kka"
+    "08:50": "Dda"
 
+  jumat:
+  "07.30" :"Informatika"
+  '11.20" :"Bahasa Inggris"
+
+    
+  }
 app.post("/webhook", (req, res) => {
   const intent = req.body.queryResult.intent.displayName;
   const tanggal = req.body.queryResult.parameters.date;
